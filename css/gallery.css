@@ -1,0 +1,9 @@
+/* Gallery and thumbnails */
+
+/* Thumbnails */
+
+#thumb {
+  max-height: 400px;
+  max-width: 500px;
+  overflow: hidden;
+}
