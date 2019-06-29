@@ -1,5 +1,6 @@
 /* Custom CSS to help with the gallery effects and create the lightbox */
 /* Use Bootstrap breakpoints for consistency. */
+
 $bootstrap-sm: 576px;
 $bootstrap-md: 768px;
 $bootstrap-lg: 992px;
@@ -29,19 +30,8 @@ $bootstrap-xl: 1200px;
   opacity: 1
 }
 
-@media(min-width:bootstrap-md) {
-  #thumb {
-    max-height:200px;
-    max-width:300px;
-  }
-}
+/* Medium screen size */
 
-@media(min-width:bootstrap-sm) {
-  #thumb {
-    max-height:150px;
-    max-width:150px;
-  }
-}
 
 /* Modal */
 /* The Modal (background) */

@@ -60,28 +60,30 @@
         <h2 class="mb-5">DÉBUT</h2>
       </div>
       <div class ="row">
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
+          <a data-gallery="debut" data-toggle="lightbox">
             <img alt="picture" style="width:500px; height:200px" src="../img/portfolio-1.jpg" class="img-fluid" />
+          </a>
         </div>
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
             <img alt="picture" style="width:500px; height:200px" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" class="img-fluid" />
         </div>
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
             <img alt="picture" style="width:500px; height:200px"  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" class="img-fluid" />
         </div>
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
             <img alt="picture" style="width:500px; height:200px"  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" class="img-fluid" />
         </div>
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
             <img alt="picture" style="width:500px; height:200px"  src="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" class="img-fluid" />
         </div>
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
             <img alt="picture" style="width:500px; height:200px"  src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" class="img-fluid" />
         </div>
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
             <img alt="picture" style="width:500px; height:200px"  src="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" class="img-fluid" />
         </div>
-        <div class="col-md-4" id="thumb">
+        <div class="col-md-4 col-xs-12" id="thumb">
             <img alt="picture" style="width:500px; height:200px"  src="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" class="img-fluid" />
         </div>
       </div>
@@ -139,6 +141,13 @@
   <!-- Custom scripts for this template -->
   <script src="../js/stylish-portfolio.min.js"></script>
   <script src="../js/modal.js"></script>
+  <script src="https://cdnjs.com/libraries/ekko-lightbox"></script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                  event.preventDefault();
+                  $(this).ekkoLightbox();
+              });
+  </script>
 
 </body>
 
