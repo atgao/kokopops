@@ -1,10 +1,25 @@
-/* Gallery and thumbnails */
+/* Custom CSS to help with the gallery effects */
 
-/* Thumbnails */
+/* Show pictures */
+#show-poster {
+  transition: opacity .2s ease-in-out;
+  opacity: 0.5;
+}
 
+#show-poster:hover {
+  opacity: 1;
+}
+
+/* Gallery thumbnails for each show */
 #thumb {
   max-height: 400px;
   max-width: 500px;
   overflow: hidden;
   padding-bottom: 25px;
+  transition: opacity .2s ease-in-out;
+  opacity: 0.5;
+}
+
+#thumb:hover {
+  opacity: 1
 }
