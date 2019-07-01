@@ -1,0 +1,48 @@
+.member-button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.member-button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.textWithBlurredBg{
+    width:175px;
+    height:175px;
+    display:inline-block;
+    position:relative;
+    transition:.2s;
+    margin:4px;
+    padding-left:4px;
+  }
+  
+  .textWithBlurredBg img{
+    width:175px;
+    height:175px;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .textWithBlurredBg:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .textWithBlurredBg :not(img){
+    position:absolute;
+    z-index:1;
+    top:80%;
+    width:100%;
+    text-align:left;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+    font-size: 20px;
+    padding-left:10px;
+  }
+  
+  .textWithBlurredBg:hover :not(img){
+    opacity:1;
+  }

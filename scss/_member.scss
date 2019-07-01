@@ -1,0 +1,31 @@
+#box,
+.member-description-box {
+    padding-top:25px;
+    padding-left:30px;
+    width:50%;
+}
+
+#box,
+.member-image-box {
+    position:fixed;
+}
+
+h2,
+.member-name {
+    padding-left: 30px;
+    padding-top:35px;
+    font-size:35px;
+}
+
+p,
+.position-name {
+    padding-left:30px;
+    font-size:20px;
+}
+
+#profile-pic,
+.member-img {
+    width: 300px;
+    height: 500px;
+    position:absolute;
+}

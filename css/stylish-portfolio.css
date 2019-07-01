@@ -69,7 +69,7 @@ h6 {
   height: 50px;
   text-align: center;
   color: white;
-  background: rgba(327, 100, 81 0.5);
+  background: rgba(52, 58, 64, 0.5);
   line-height: 45px;
 }
 
@@ -93,8 +93,8 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  /* background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg"); */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +126,7 @@ h6 {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: #b7ffd2;
+  background: #1D809F;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -159,7 +159,7 @@ h6 {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(327, 100, 81, 0.1);
+  background: rgba(52, 58, 64, 0.1);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -191,7 +191,7 @@ h6 {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(327, 100, 81 0.5);
+  background: rgba(52, 58, 64, 0.5);
   line-height: 50px;
   z-index: 999;
 }
@@ -206,7 +206,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #b7ffd2;
+  color: #1D809F;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -295,7 +295,7 @@ h6 {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(141, 231, 176, 0.9);
+    background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -312,7 +312,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #b7ffd2;
+  background-color: #1D809F;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -325,7 +325,7 @@ footer.footer .social-link:hover {
 }
 
 a {
-  color: #b7ffd2;
+  color: #1D809F;
 }
 
 a:hover, a:focus, a:active {
@@ -333,63 +333,153 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #b7ffd2!important;
-  /* border-color: #b7ffd2!important; */
-  color: #fff!important;
+  background-color: #1D809F !important;
+  border-color: #1D809F !important;
+  color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74!important;
-  /* border-color: #155d74!important; */
+  background-color: #155d74 !important;
+  border-color: #155d74 !important;
 }
 
 .btn-secondary {
-  background-color: #ff9cd2!important;
-  border-color: #ff9cd2!important;
-  color: #fff!important;
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #fff !important;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106!important;
-  border-color: #ba9106!important;
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
 }
 
 .btn-dark {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 .btn {
-  /* -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1); */
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 700;
 }
 
 .bg-primary {
-  background-color: #b7ffd2!important;
+  background-color: #1D809F !important;
 }
 
 .text-primary {
-  color: #b7ffd2!important;
+  color: #1D809F !important;
 }
 
 .text-secondary {
-  color: #ff9cd2!important;
+  color: #ecb807 !important;
 }
 
-/* Carousel */
-.carousel-item {
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.carousel-caption {
-  background-color: transparent;
-  max-width: 550px;
-  padding: 0 20px;
-  margin: 0 auto;
-  margin-top: 200px;
+/* Change the left Questions into kokopops colors */
+h1,
+#title-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
+}
+
+#subtitle {
+  padding-left: 50px;
+  text-align: left;
+  font-variant: small-caps;
+}
+
+#answers {
+  padding-right: 50px;
+  padding-left: 150px;
+  text-align: right;
+}
+
+.member-button {
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.member-button:hover {
+  background-color: #4CAF50;
+  /* Green */
+  color: white;
+}
+
+.textWithBlurredBg {
+  width: 175px;
+  height: 175px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin: 4px;
+  padding-left: 4px;
+}
+
+.textWithBlurredBg img {
+  width: 175px;
+  height: 175px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 4px;
+}
+
+.textWithBlurredBg:hover img {
+  -webkit-filter: blur(2px) brightness(60%);
+  filter: blur(2px) brightness(60%);
+  -webkit-box-shadow: 0 0 16px cyan;
+  box-shadow: 0 0 16px cyan;
+}
+
+.textWithBlurredBg :not(img) {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.textWithBlurredBg:hover :not(img) {
+  opacity: 1;
+}
+
+#box,
+.member-description-box {
+  padding-top: 25px;
+  padding-left: 30px;
+  width: 50%;
+}
+
+#box,
+.member-image-box {
+  position: fixed;
+}
+
+h2,
+.member-name {
+  padding-left: 30px;
+  padding-top: 35px;
+  font-size: 35px;
+}
+
+p,
+.position-name {
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+#profile-pic,
+.member-img {
+  width: 300px;
+  height: 500px;
+  position: absolute;
 }
