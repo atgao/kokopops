@@ -1,19 +1,26 @@
 /* Change the left Questions into kokopops colors */
-h1,
-#title-page {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+.container-row {
+    padding-left:30%;
+    padding-right:15%;
+    display:flex;
 }
 
-#subtitle {
-    padding-left:50px;
-    text-align: left;
-    font-variant: small-caps;
-}
+.about-info {
+    h1,
+    #about-title-page {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
 
-#answers {
-    padding-right: 50px;
-    padding-left: 150px;
-    text-align: right;
+    h2,
+    #about-subtitle {
+        text-align: left;
+        font-variant: small-caps;
+    }
+    p,
+    #about-answers {
+        padding-left: 150px;
+        text-align: right;
+    }
 }
