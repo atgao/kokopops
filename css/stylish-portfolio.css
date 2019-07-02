@@ -391,6 +391,8 @@ a:hover, a:focus, a:active {
 
 .about-info h2,
 .about-info #about-subtitle {
+  color: #D3E8FD;
+  text-shadow: 1px 1px #8BADCE;
   text-align: left;
   font-variant: small-caps;
 }
@@ -443,6 +445,12 @@ a:hover, a:focus, a:active {
 
 .textWithBlurredBg:hover :not(img) {
   opacity: 1;
+}
+
+h2,
+#company-subtitle {
+  color: #D3E8FD;
+  text-shadow: 1px 1px #8BADCE;
 }
 
 .container-row {
