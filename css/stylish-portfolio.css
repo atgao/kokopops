@@ -446,28 +446,22 @@ a:hover, a:focus, a:active {
 }
 
 .container-row {
-  padding-left: 30%;
-  padding-right: 15%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.member-description-box {
-  max-width: 50%;
-}
-
 .member-description-box h2,
 .member-description-box #member-name {
-  max-width: 50%;
-  padding-left: 20%;
-  padding-top: 35px;
+  width: 300px;
   font-size: 35px;
 }
 
 .member-description-box p,
 .member-description-box #position-name {
-  max-width: 50%;
-  padding-left: 20%;
-  font-size: 20px;
+  width: 300px;
+  font-size: 25px;
 }
