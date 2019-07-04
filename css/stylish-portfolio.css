@@ -412,9 +412,12 @@ a:hover, a:focus, a:active {
   transition: .2s;
   margin: 4px;
   padding-left: 4px;
+  z-index: -1;
+  opacity: 0.99;
 }
 
 .textWithBlurredBg img {
+  position: relative;
   width: 175px;
   height: 175px;
   -webkit-transition: .3s;
@@ -449,27 +452,70 @@ a:hover, a:focus, a:active {
 
 h2,
 #company-subtitle {
-  color: #D3E8FD;
+  color: #d3e8fd;
   text-shadow: 1px 1px #8BADCE;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+  z-index: 999 !important;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #D3E8FD;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
 .container-row {
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 35px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.member-description-box h2,
-.member-description-box #member-name {
-  width: 300px;
-  font-size: 35px;
-}
-
-.member-description-box p,
-.member-description-box #position-name {
-  width: 300px;
-  font-size: 25px;
+.member-description-box {
+  text-align: left;
+  width: 200px;
 }
