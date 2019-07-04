@@ -434,7 +434,7 @@ a:hover, a:focus, a:active {
 
 .textWithBlurredBg :not(img) {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 60%;
   width: 100%;
   text-align: left;
