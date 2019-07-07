@@ -46,23 +46,6 @@
     color:#d3e8fd;
     text-shadow: 1px 1px #8BADCE
   }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  
   .popup {
     margin: 20px auto;
     padding: 20px;
@@ -72,7 +55,7 @@
     transition: all 5s ease-in-out;
     z-index: 999!important;
   }
-  
+
   .popup .close {
     position: absolute;
     top: 20px;
@@ -90,7 +73,33 @@
     max-height: 30%;
     overflow: auto;
   }
-  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .overlay:target {
+    visibility: visible;
+    opacity:1;
+  }
+
+  .close-outside {
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+
 .container-row {
     padding-top:5%;
     padding-bottom:5%;
