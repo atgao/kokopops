@@ -530,6 +530,21 @@ h2,
   width: 200px;
 }
 
+.company-navigation-buttons,
+#company-navigation {
+  border-radius: 10px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.company-navigation-buttons:hover,
+#company-navigation {
+  background-color: #8BADCE;
+  /* Green */
+  color: #8BADCE;
+}
+
 .wrap-collabsible {
   margin-bottom: 1.2rem 0;
 }
@@ -542,12 +557,12 @@ input[type='checkbox'] {
   display: block;
   font-weight: bold;
   font-family: monospace;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   text-align: center;
   padding: 1rem;
-  color: #A77B0E;
-  background: #FAE042;
+  color: #B26D90;
+  background: #F9D9E6 !important;
   cursor: pointer;
   border-radius: 7px;
   -webkit-transition: all 0.25s ease-out;
@@ -555,7 +570,7 @@ input[type='checkbox'] {
 }
 
 .lbl-toggle:hover {
-  color: #7C5A0B;
+  color: #8C4569;
 }
 
 .lbl-toggle::before {
@@ -596,9 +611,29 @@ input[type='checkbox'] {
 }
 
 .collapsible-content .content-inner {
-  background: rgba(250, 224, 66, 0.2);
+  background: #FCF6F9;
   border-bottom: 1px solid rgba(250, 224, 66, 0.45);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   padding: .5rem 1rem;
+}
+
+.company-navigation-buttons {
+  position: relative;
+  width: 15%;
+  border-radius: 10px;
+  border-color: #8BADCE;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  padding-left: 10%;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-right: 10%;
+  font-size: 1.2rem;
+  background: #ffff;
+}
+
+.company-navigation-buttons:hover {
+  color: #F9D9E6;
 }
