@@ -54,6 +54,7 @@
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 999!important;
+    
   }
 
   .popup .close {
@@ -83,6 +84,7 @@
     transition: opacity 100ms;
     visibility: hidden;
     opacity: 0;
+    overflow-y: atup;
   }
 
   .overlay:target {
@@ -105,10 +107,18 @@
     padding-bottom:5%;
     padding-left:10%;
     display:flex;
-}
+    overflow: scroll;
 
-.member-description-box {
-  text-align: left;
-  width:200px;
+  .member-description-box {
+    text-align: left;
+    width:200px;
+  }
+  #image-description{
+    object-fit: cover;
+    overflow-y:auto;
+  }
+  #image-member-profile{
+    overflow-y:auto;
+    object-fit: cover;
+  }
 }
-

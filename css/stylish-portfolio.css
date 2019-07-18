@@ -499,6 +499,7 @@ h2,
   transition: opacity 100ms;
   visibility: hidden;
   opacity: 0;
+  overflow-y: atup;
 }
 
 .overlay:target {
@@ -523,11 +524,24 @@ h2,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: scroll;
 }
 
-.member-description-box {
+.container-row .member-description-box {
   text-align: left;
   width: 200px;
+}
+
+.container-row #image-description {
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow-y: auto;
+}
+
+.container-row #image-member-profile {
+  overflow-y: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .wrap-collabsible {
