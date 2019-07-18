@@ -530,21 +530,6 @@ h2,
   width: 200px;
 }
 
-.company-navigation-buttons,
-#company-navigation {
-  border-radius: 10px;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
-}
-
-.company-navigation-buttons:hover,
-#company-navigation {
-  background-color: #8BADCE;
-  /* Green */
-  color: #8BADCE;
-}
-
 .wrap-collabsible {
   margin-bottom: 1.2rem 0;
 }
@@ -636,4 +621,8 @@ input[type='checkbox'] {
 
 .company-navigation-buttons:hover {
   color: #F9D9E6;
+  background: #8BADCE;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
 }
