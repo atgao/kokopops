@@ -126,7 +126,7 @@ h6 {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: #1D809F;
+  background: #a4e5bd;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -206,7 +206,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #a4e5bd;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -295,7 +295,7 @@ h6 {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(164, 229, 189, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -312,7 +312,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #a4e5bd;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -320,38 +320,35 @@ footer.footer .social-link {
 }
 
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #7cdaa0;
   text-decoration: none;
 }
 
 a {
-  color: #1D809F;
+  color: #a4e5bd;
 }
 
 a:hover, a:focus, a:active {
-  color: #155d74;
+  color: #7cdaa0;
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #a4e5bd !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #7cdaa0 !important;
+  border-color: #7cdaa0 !important;
 }
 
 .btn-secondary {
-  background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
+  background-color: #ff9cd2 !important;
   color: #fff !important;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106 !important;
-  border-color: #ba9106 !important;
+  background-color: #ff69bb !important;
 }
 
 .btn-dark {
@@ -359,21 +356,31 @@ a:hover, a:focus, a:active {
 }
 
 .btn {
-  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 700;
 }
 
+.btn-link {
+  font-weight: 400;
+  color: #a4e5bd;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  font-weight: 400;
+  color: #ff9cd2;
+  text-decoration: none;
+}
+
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #a4e5bd !important;
 }
 
 .text-primary {
-  color: #1D809F !important;
+  color: #a4e5bd !important;
 }
 
 .text-secondary {
-  color: #ecb807 !important;
+  color: #ff9cd2 !important;
 }
 
 /* Change the left Questions into kokopops colors */

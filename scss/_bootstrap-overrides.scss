@@ -9,7 +9,7 @@ a {
 
 .btn-primary {
   background-color: $primary !important;
-  border-color: $primary !important;
+  // border-color: $primary !important;
   color: $white !important;
   &:hover,
   &:focus,
@@ -21,13 +21,13 @@ a {
 
 .btn-secondary {
   background-color: $secondary !important;
-  border-color: $secondary !important;
+  // border-color: $secondary !important;
   color: $white !important;
   &:hover,
   &:focus,
   &:active {
     background-color: darken($secondary, 10%) !important;
-    border-color: darken($secondary, 10%) !important;
+    // border-color: darken($secondary, 10%) !important;
   }
 }
 
@@ -36,8 +36,20 @@ a {
 }
 
 .btn {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 700;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: $primary;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    font-weight: 400;
+    color: $secondary;
+    text-decoration: none;
 }
 
 .bg-primary {

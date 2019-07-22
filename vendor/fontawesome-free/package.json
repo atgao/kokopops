@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.8.2",
-      "/Users/drew/Projects/kokopops"
+      "/mnt/c/Users/alice/Documents/school/kokopops"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.8.2",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.2.tgz",
   "_spec": "5.8.2",
-  "_where": "/Users/drew/Projects/kokopops",
+  "_where": "/mnt/c/Users/alice/Documents/school/kokopops",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",
