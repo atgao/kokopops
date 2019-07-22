@@ -3,10 +3,14 @@
     [
       "@fortawesome/fontawesome-free@5.8.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/mnt/c/Users/alice/Documents/school/kokopops"
 =======
       "/Users/drew/Projects/kokopops"
 >>>>>>> dev/drew
+=======
+      "/mnt/c/Users/alice/Documents/school/kokopops"
+>>>>>>> e90fc83e3b24abc76b179a745fe460aff07d4cd0
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.8.2",
@@ -32,10 +36,14 @@
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.2.tgz",
   "_spec": "5.8.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "_where": "/mnt/c/Users/alice/Documents/school/kokopops",
 =======
   "_where": "/Users/drew/Projects/kokopops",
 >>>>>>> dev/drew
+=======
+  "_where": "/mnt/c/Users/alice/Documents/school/kokopops",
+>>>>>>> e90fc83e3b24abc76b179a745fe460aff07d4cd0
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",

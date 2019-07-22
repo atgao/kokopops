@@ -10,7 +10,7 @@
     z-index:-1;
     opacity: 0.99;
   }
-  
+
   .textWithBlurredBg img{
     position:relative;
     width:175px;
@@ -18,12 +18,12 @@
     transition:.3s;
     border-radius:4px;
   }
-  
+
   .textWithBlurredBg:hover img{
     filter:blur(2px) brightness(60%);
     box-shadow:0 0 16px cyan;
   }
-   
+
   .textWithBlurredBg :not(img){
     position:absolute;
     z-index:2;
@@ -36,12 +36,11 @@
     font-size: 20px;
     padding-left:10px;
   }
-  
+
   .textWithBlurredBg:hover :not(img){
     opacity:1;
   }
 
-  h2,
   #company-subtitle {
     color:#d3e8fd;
     text-shadow: 1px 1px #8BADCE
@@ -54,7 +53,7 @@
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 999!important;
-    
+
   }
 
   .popup .close {

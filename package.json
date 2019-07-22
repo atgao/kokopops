@@ -1,5 +1,8 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e90fc83e3b24abc76b179a745fe460aff07d4cd0
     "title": "Stylish Portfolio",
     "name": "startbootstrap-stylish-portfolio",
     "version": "5.0.5",
@@ -51,6 +54,7 @@
         "gulp-uglify": "3.0.2",
         "merge-stream": "2.0.0"
     }
+<<<<<<< HEAD
 =======
   "title": "Stylish Portfolio",
   "name": "startbootstrap-stylish-portfolio",
@@ -107,4 +111,6 @@
   },
   "main": "gulpfile.js"
 >>>>>>> dev/drew
+=======
+>>>>>>> e90fc83e3b24abc76b179a745fe460aff07d4cd0
 }
