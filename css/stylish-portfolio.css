@@ -339,7 +339,6 @@ a:hover, a:focus, a:active {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #7cdaa0 !important;
-  border-color: #7cdaa0 !important;
 }
 
 .btn-secondary {
@@ -372,7 +371,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #a4e5bd !important;
+  background-color: #d3e8fd !important;
 }
 
 .text-primary {
@@ -457,7 +456,6 @@ a:hover, a:focus, a:active {
   opacity: 1;
 }
 
-h2,
 #company-subtitle {
   color: #d3e8fd;
   text-shadow: 1px 1px #8BADCE;

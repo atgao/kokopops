@@ -15,7 +15,7 @@ a {
   &:focus,
   &:active {
     background-color: darken($primary, 10%) !important;
-    border-color: darken($primary, 10%) !important;
+    // border-color: darken($primary, 10%) !important;
   }
 }
 
@@ -53,7 +53,7 @@ a {
 }
 
 .bg-primary {
-  background-color: $primary !important;
+  background-color: $index-bg !important;
 }
 
 .text-primary {
