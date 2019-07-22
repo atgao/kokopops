@@ -8,11 +8,11 @@ $bootstrap-xl: 1200px;
 
 /* Show pictures */
 #show-poster {
-  transition: opacity .2s ease-in-out;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 #show-poster:hover {
+  transition: opacity .2s ease-in-out;
   opacity: 1;
 }
 
