@@ -105,280 +105,71 @@
 <!-- ************************************************************************************************************** -->
 <!-- Board Section -->
 <!-- ************************************************************************************************************** -->
-  <div id="board">
+  <!-- <div id="board">
       <h2 id="company-subtitle"> Board</h2>
       <div id="boardList">
       </div>
+  </div> -->
+
+  <div id="company-content">
   </div>
 
   <!-- Board Handlebars Template -->
   <script id="boardTemplate" type="text/x-handlebars-template">
-    <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
-    {{#each board}}
-    <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
-      <!-- Change Thumbnail Photo Here!-->
-      <img src={{propic}}>
-      <div class="box">
-        <!-- Change Name and href Here!  -->
-          <h2><a class="button" href={{href}}>{{name}}</a></h2>
-      </div>
-    </div>
-
-
-    <div id={{id}} class="overlay" style="z-index: 999">
-        <div style="width:50%;" class="popup">
-            <a class="close" href="#board">&times;</a> <!-- Change href if wanted-->
-            <div class="content">
-              <a class="close-outside" href="#board"></a> <!-- Change href if wanted -->
-                <div class="container-row">
-                  <!-- Change Descriptions Here-->
-                    <div class="member-description-box">
-                          <h2 id="member-name" style="color:#D3E8FD;">{{name}}, </h2>
-                          <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
-                          <i>{{position}}</i></p>
-                          <hr style="width:150px">
-                          <p id="member-description" style="font-size:20px;">
-                            <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
-                            {{class}}
-                            <br>
-                              <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
-                              {{height}}<br>
-                              <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
-                              {{hometown}}<br>
-                              <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
-                              {{bias}}<br>
-                                <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
-                                {{concern}}<br>
-                    </div>
-                    <!-- Profile Picture URL here-->
-                    <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src={{propic}}>
-                  </div>
-            </div>
+    {{#each section}}
+    <div id={{this.year}}>
+      <h2 id="company-subtitle">{{this.year}}</h2>
+      <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
+      {{#each this.members}}
+      <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
+        <!-- Change Thumbnail Photo Here!-->
+        <img src={{propic}}>
+        <div class="box">
+          <!-- Change Name and href Here!  -->
+            <h2><a class="button" href={{href}}>{{name}}</a></h2>
         </div>
+      </div>
+
+      <div id={{id}} class="overlay" style="z-index: 999">
+          <div style="width:50%;" class="popup">
+              <a class="close" href={{this.year}}>&times;</a> <!-- Change href if wanted-->
+              <div class="content">
+                <a class="close-outside" href={{this.year}}></a> <!-- Change href if wanted -->
+                  <div class="container-row">
+                    <!-- Change Descriptions Here-->
+                      <div class="member-description-box">
+                            <h2 id="member-name" style="color:#D3E8FD;">{{name}}</h2>
+                            {{#if position}}
+                            <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
+                            <i>{{position}}</i></p>
+                            {{/if}}
+                            <hr style="width:150px">
+                            <p id="member-description" style="font-size:20px;">
+                              <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
+                              {{class}}
+                              <br>
+                                <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
+                                {{height}}<br>
+                                <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
+                                {{hometown}}<br>
+                                <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
+                                {{bias}}<br>
+                                  <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
+                                  {{concern}}<br>
+                      </div>
+                      <!-- Profile Picture URL here-->
+                      <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src={{this.members.propic}}>
+                    </div>
+              </div>
+          </div>
+      </div>
+      {{/each}}
     </div>
+    <hr id="thumbnail-divider">
     {{/each}}
   </script>
 
 <!-- End of Board Section! -->
-<hr id="thumbnail-divider">
-
-<!-- ************************************************************************************************************** -->
-<!-- Senior Section! -->
-<!-- ************************************************************************************************************** -->
-
-  <div id = "seniors">
-    <h2 id="company-subtitle"> Seniors</h2>
-
-    <!-- Member Start -->
-    <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
-    <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
-        <!-- Change Thumbnail Photo Here!-->
-        <img src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-        <div class="box">
-          <!-- Change Name and href Here! -->
-            <h2><a class="button" href="#example-member-3">Seniors 1</a></h2>
-        </div>
-      </div>
-
-      <div id="example-member-3" class="overlay" style="z-index: 999">
-          <div style="width:50%;" class="popup">
-              <a class="close" href="#seniors">&times;</a> <!-- Change href if wanted-->
-              <div class="content">
-                <a class="close-outside" href="#seniors"></a> <!-- Change href if wanted -->
-                  <div class="container-row">
-                    <!-- Change Descriptions Here-->
-                      <div class="member-description-box">
-                            <h2 id="member-name" style="color:#D3E8FD;">Example Member, </h2>
-                            <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
-                            <i> Position Title</i></p>
-                            <hr style="width:150px">
-                            <p id="member-description" style="font-size:20px;">
-                              <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
-                              2021
-                              <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
-                                168cm <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
-                                Myrtle Beach, SC<br>
-                                <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
-                                Exo's Chen<br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
-                                  Recruiting szn :'(<br>
-                      </div>
-                      <!-- Profile Picture URL here-->
-                      <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-                    </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Member End -->
-
-  </div>
-<!-- End of Senior Section! -->
-
-<hr id="thumbnail-divider">
-
-<!-- ************************************************************************************************************** -->
-<!-- Junior Section -->
-<!-- ************************************************************************************************************** -->
-
-  <div id="juniors">
-    <h2 id="company-subtitle"> Juniors</h2>
-    <!-- Member Start -->
-    <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
-    <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
-        <!-- Change Thumbnail Photo Here!-->
-        <img src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-        <div class="box">
-          <!-- Change Name and href Here! -->
-            <h2><a class="button" href="#example-member-4">Junior 1</a></h2>
-        </div>
-      </div>
-
-      <div id="example-member-4" class="overlay" style="z-index: 999">
-          <div style="width:50%;" class="popup">
-              <a class="close" href="#juniors">&times;</a> <!-- Change href if wanted-->
-              <div class="content">
-                <a class="close-outside" href="#juniors"></a> <!-- Change href if wanted -->
-                  <div class="container-row">
-                    <!-- Change Descriptions Here-->
-                      <div class="member-description-box">
-                            <h2 id="member-name" style="color:#D3E8FD;">Example Member, </h2>
-                            <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
-                            <i> Position Title</i></p>
-                            <hr style="width:150px">
-                            <p id="member-description" style="font-size:20px;">
-                              <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
-                              2021
-                              <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
-                                168cm <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
-                                Myrtle Beach, SC<br>
-                                <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
-                                Exo's Chen<br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
-                                  Recruiting szn :'(<br>
-                      </div>
-                      <!-- Profile Picture URL here-->
-                      <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-                    </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Member End -->
-
-  </div>
-<!-- End of Junior Section! -->
-
-<hr id="thumbnail-divider">
-
-<!-- ************************************************************************************************************** -->
-<!-- Sophomore Section! -->
-<!-- ************************************************************************************************************** -->
-  <div id="sophomores">
-    <h2 id="company-subtitle"> Sophomores</h2>
-    <!-- Member Start -->
-    <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
-    <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
-        <!-- Change Thumbnail Photo Here!-->
-        <img src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-        <div class="box">
-          <!-- Change Name and href Here! -->
-            <h2><a class="button" href="#example-member-5">Sophomore 1</a></h2>
-        </div>
-      </div>
-
-      <div id="example-member-5" class="overlay" style="z-index: 999">
-          <div style="width:50%;" class="popup">
-              <a class="close" href="#sophomores">&times;</a> <!-- Change href if wanted-->
-              <div class="content">
-                <a class="close-outside" href="#sophomores"></a> <!-- Change href if wanted -->
-                  <div class="container-row">
-                    <!-- Change Descriptions Here-->
-                      <div class="member-description-box">
-                            <h2 id="member-name" style="color:#D3E8FD;">Example Member, </h2>
-                            <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
-                            <i> Position Title</i></p>
-                            <hr style="width:150px">
-                            <p id="member-description" style="font-size:20px;">
-                              <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
-                              2021
-                              <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
-                                168cm <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
-                                Myrtle Beach, SC<br>
-                                <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
-                                Exo's Chen<br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
-                                  Recruiting szn :'(<br>
-                      </div>
-                      <!-- Profile Picture URL here-->
-                      <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-                    </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Member End -->
-
-  </div>
-<!-- End of Sophomore Section -->
-<hr id="thumbnail-divider">
-
-<!-- ************************************************************************************************************** -->
-<!-- Freshmen Section! -->
-<!-- ************************************************************************************************************** -->
-  <div id="freshmen">
-    <h2 id="company-subtitle"> Freshmen</h2>
-    <!-- Member Start -->
-    <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
-    <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
-        <!-- Change Thumbnail Photo Here!-->
-        <img src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-        <div class="box">
-          <!-- Change Name and href Here! -->
-            <h2><a class="button" href="#example-member-6">Freshmen 1</a></h2>
-        </div>
-      </div>
-
-      <div id="example-member-6" class="overlay" style="z-index: 999">
-          <div style="width:50%;" class="popup">
-              <a class="close" href="#freshmen">&times;</a> <!-- Change href if wanted-->
-              <div class="content">
-                <a class="close-outside" href="#freshmen"></a> <!-- Change href if wanted -->
-                  <div class="container-row">
-                    <!-- Change Descriptions Here-->
-                      <div class="member-description-box">
-                            <h2 id="member-name" style="color:#D3E8FD;">Example Member, </h2>
-                            <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
-                            <i> Position Title</i></p>
-                            <hr style="width:150px">
-                            <p id="member-description" style="font-size:20px;">
-                              <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
-                              2021
-                              <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
-                                168cm <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
-                                Myrtle Beach, SC<br>
-                                <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
-                                Exo's Chen<br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
-                                  Recruiting szn :'(<br>
-                      </div>
-                      <!-- Profile Picture URL here-->
-                      <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-                    </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Member End -->
-  </div>
 </body>
 
 

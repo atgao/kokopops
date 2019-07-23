@@ -53,6 +53,7 @@
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 999!important;
+    overflow: hidden;
 
   }
 
@@ -71,7 +72,7 @@
   }
   .popup .content {
     max-height: 30%;
-    overflow: auto;
+    overflow: hidden;
   }
   .overlay {
     position: fixed;
@@ -83,10 +84,12 @@
     transition: opacity 100ms;
     visibility: hidden;
     opacity: 0;
-    overflow-y: atup;
+    // overflow-y: atup;
+    overflow: hidden;
   }
 
   .overlay:target {
+    overflow: hidden;
     visibility: visible;
     opacity:1;
   }
@@ -117,7 +120,8 @@
     overflow-y:auto;
   }
   #image-member-profile{
-    overflow-y:auto;
+    // overflow-y:auto;
+    overflow: hidden;
     object-fit: cover;
   }
 }

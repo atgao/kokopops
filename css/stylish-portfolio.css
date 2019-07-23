@@ -470,6 +470,7 @@ a:hover, a:focus, a:active {
   -webkit-transition: all 5s ease-in-out;
   transition: all 5s ease-in-out;
   z-index: 999 !important;
+  overflow: hidden;
 }
 
 .popup .close {
@@ -490,7 +491,7 @@ a:hover, a:focus, a:active {
 
 .popup .content {
   max-height: 30%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .overlay {
@@ -504,10 +505,11 @@ a:hover, a:focus, a:active {
   transition: opacity 100ms;
   visibility: hidden;
   opacity: 0;
-  overflow-y: atup;
+  overflow: hidden;
 }
 
 .overlay:target {
+  overflow: hidden;
   visibility: visible;
   opacity: 1;
 }
@@ -544,7 +546,7 @@ a:hover, a:focus, a:active {
 }
 
 .container-row #image-member-profile {
-  overflow-y: auto;
+  overflow: hidden;
   -o-object-fit: cover;
   object-fit: cover;
 }
