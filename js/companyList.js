@@ -1,7 +1,7 @@
-// BOARD MEMBERS TEMPLATE
+// COMPANY TEMPLATE
 
 // sets variable source to boardTemplate id in company.html
-var source = document.getElementById("boardTemplate").innerHTML;
+var source = document.getElementById("companyTemplate").innerHTML;
 
 // Handlebars compiles the above source into a template
 var template = Handlebars.compile(source);

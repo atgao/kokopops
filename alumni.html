@@ -97,130 +97,77 @@
       </div>
 
       <div style="padding-left:10%;padding-right:10%; padding-top:2.5%;" id="thumbnail">
-        <hr id="thumbnail-divider">
+      <hr id="thumbnail-divider">
 
 
 <!-- ************************************************************************************************************** -->
-<!-- Class of 2019 Section -->
+<!-- Alumni Section -->
 <!-- ************************************************************************************************************** -->
-<div id="2019">
-<div class="wrap-collabsible">
-  <input id="collapsible" class="toggle" type="checkbox">
-  <label for="collapsible" class="lbl-toggle">Class of 2019</label>
-  <div class="collapsible-content">
-    <div class="content-inner">
-      <!-- Member Start -->
-      <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
-      <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
-        <!-- Change Thumbnail Photo Here!-->
-        <img src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-        <div class="box">
-          <!-- Change Name and href Here!  -->
-            <h2><a class="button" href="#example-member">Alum 1</a></h2>
-        </div>
-      </div>
 
-      <div id="example-member" class="overlay" style="z-index: 999">
-          <div style="width:50%;" class="popup">
-              <a class="close" href="#2019">&times;</a> <!-- Change href if wanted-->
-              <div class="content">
-                <a class="close-outside" href="#2019"></a> <!-- Change href if wanted -->
-                  <div class="container-row">
-                    <!-- Change Descriptions Here-->
-                      <div class="member-description-box">
-                            <h2 id="member-name" style="color:#D3E8FD;">Example Member, </h2>
-                            <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
-                            <i> Position Title</i></p>
-                            <hr style="width:150px">
-                            <p id="member-description" style="font-size:20px;">
-                              <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
-                              2021
-                              <br>
-                              <b style="font-size:15px; font-variant: small-caps;"> years active:</b> <br>
-                              shows they were in? or maybe years?
-                              <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
-                                168cm <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
-                                Myrtle Beach, SC<br>
-                                <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
-                                Exo's Chen<br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
-                                  Recruiting szn :'(<br>
-                      </div>
-                      <!-- Profile Picture URL here-->
-                      <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-                    </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Member End -->
-    </div>
-  </div>
-</div>
+<div id="alumni-content">
 </div>
 
-<!-- ************************************************************************************************************** -->
-<!-- Class of 2018 Section -->
-<!-- ************************************************************************************************************** -->
-<div id="2018">
+<!-- Handlebars script -->
+<script id="alumniTemplate" type="text/x-handlebars-template">
+
+  {{#each section}}
+  <div id={{this.year}}>
   <div class="wrap-collabsible">
-    <input id="collapsible" class="toggle" type="checkbox">
-    <label for="collapsible" class="lbl-toggle">Class of 2018</label>
+    <input id={{this.collapsible}} class="toggle" type="checkbox">
+    <label for={{this.collapsible}} class="lbl-toggle">{{this.label}}</label>
     <div class="collapsible-content">
       <div class="content-inner">
-        <!-- Member Start -->
-        <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
-        <div id="example-member-name" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
-          <!-- Change Thumbnail Photo Here!-->
-          <img src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-          <div class="box">
-            <!-- Change Name and href Here!  -->
-              <h2><a class="button" href="#example-member">Alum 1</a></h2>
-          </div>
-        </div>
 
-        <div id="example-member" class="overlay" style="z-index: 999">
-            <div style="width:50%;" class="popup">
-                <a class="close" href="#2018">&times;</a> <!-- Change href if wanted-->
-                <div class="content">
-                  <a class="close-outside" href="#2018"></a> <!-- Change href if wanted -->
-                    <div class="container-row">
-                      <!-- Change Descriptions Here-->
-                        <div class="member-description-box">
-                              <h2 id="member-name" style="color:#D3E8FD;">Example Member, </h2>
-                              <p id="position-name" style="color:#F9D9E6; font-size: 25px; text-shadow: 1px 1px #E38CAF">
-                              <i> Position Title</i></p>
-                              <hr style="width:150px">
-                              <p id="member-description" style="font-size:20px;">
-                                <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
-                                2021
-                                <br>
-                                <b style="font-size:15px; font-variant: small-caps;"> years active:</b> <br>
-                                shows they were in? or maybe years?
-                                <br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> height:</b> <br>
-                                  168cm <br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> hometown: </b> <br>
-                                  Myrtle Beach, SC<br>
-                                  <b style="font-size:15px; font-variant: small-caps;"> ultimate bias: </b> <br>
-                                  Exo's Chen<br>
-                                    <b style="font-size:15px; font-variant: small-caps;"> current concern: </b> <br>
-                                    Recruiting szn :'(<br>
-                        </div>
-                        <!-- Profile Picture URL here-->
-                        <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src="https://web.opendrive.com/api/v1/download/file.json/NTlfODQyNzYwM18?inline=1">
-                      </div>
+                {{#each this.members}}
+                <!-- Member Start -->
+                <!-- Change ID Name if want to make closed popup come here (Default is Section Name) -->
+                <div id="member" class="textWithBlurredBg" style="opacity:0.99; z-index: 1;">
+                  <!-- Change Thumbnail Photo Here!-->
+                  <img src={{propic}}>
+                  <div class="box">
+                    <!-- Change Name and href Here!  -->
+                      <h2><a class="button" href={{href}}>{{name}}</a></h2>
+                  </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Member End -->
+                <div id={{id}} class="overlay" style="z-index: 999">
+                    <div style="width:50%;" class="popup">
+                        <a class="close" href={{this.year}}>&times;</a> <!-- Change href if wanted-->
+                        <div class="content">
+                          <a class="close-outside" href={{this.year}}></a> <!-- Change href if wanted -->
+                            <div class="container-row">
+                              <!-- Change Descriptions Here-->
+                                <div class="member-description-box">
+                                      <h2 id="member-name" style="color:#D3E8FD;">{{name}}</h2>
+                                      <hr style="width:150px">
+                                      <p id="member-description" style="font-size:20px;">
+                                        <b style="font-size:15px; font-variant: small-caps;"> class:</b> <br>
+                                        {{class}}
+                                        <br>
+                                        <b style="font-size:15px; font-variant: small-caps;"> years active:</b> <br>
+                                        {{active}}
+                                        <br>
+                                </div>
+                                <!-- Profile Picture URL here-->
+                                <img id="image-member-profile" style="height:500px;width:300px; padding-left:5%;" src={{propic}}>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member End -->
+
+                {{/each}}
+
       </div>
     </div>
   </div>
   </div>
+
+  {{/each}}
+
+</script>
+
 </body>
 
 
@@ -262,6 +209,12 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+
+  <!-- Require Handlebars -->
+  <script src="js/handlebars-v4.1.2.js"></script>
+
+  <!-- RENDER TEMPLATE AFTER EVERYTHING ELSE IS LOADED -->
+  <script src="js/alumniList.js"></script>
 
 </body>
 
